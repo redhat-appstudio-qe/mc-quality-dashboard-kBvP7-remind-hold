@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-p3nc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-ztml-tenant/mc-quality-dashboard/backend-quality-dashboard-p3nc@sha256:c8083b3a1a55437f4054cc3437f7114e6fa9a77322be27ebea752fe61597f34f
+        name: container-image
+        resources: {}
+status: {}
